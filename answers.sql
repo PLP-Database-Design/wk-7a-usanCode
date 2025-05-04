@@ -63,16 +63,16 @@ values
 
 
 -- Create the OrderDetails table
-CREATE TABLE Orders (
-    OrderID INT,
-    Product VARCHAR(255),
-    Quantity INT,
-    PRIMARY KEY (OrderID, Product),
-    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+create table Orders (
+    OrderID int,
+    Product varchar(255),
+    Quantity int,
+    primary key (OrderID, Product),
+    foreign key (OrderID) references Orders(OrderID)
 );
 
 -- Insert data into the OrderDetails table
-INSERT INTO Orders (OrderID, Product, Quantity)
+insert into Orders (OrderID, Product, Quantity)
 VALUES
     (101, 'Laptop', 2),
     (101, 'Mouse', 1),
