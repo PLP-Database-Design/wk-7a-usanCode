@@ -16,7 +16,7 @@ create table OrderProducts (
     foregn key (OrderID) references Orders(OrderID)
 );
 
-insert into productsItems (OrderID, CustomerName, Product) 
+insert into OrderProducts (OrderID, Product) 
 values
     (101, 'Laptop'),
     (101, 'Mouse'),
